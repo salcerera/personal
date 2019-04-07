@@ -1,0 +1,158 @@
+// Add your components here such as custom variables, UI elements, Typorgraphy
+
+
+// Variables
+
+$font-stack: 'Poppins', 'sans-serif';
+$bold: bold;
+$letter-1: lpx;
+$letter-2: 2px;
+$muted: rgba(0,0,0,0.3);
+$ui-green: #00b09b;
+$ui-ygreen: #92FE9D;
+$ui-cyan: #74ebd5;
+$ui-light-blue: #1fc8db;
+$ui-blue: #2cb5e8;
+
+
+// Color Scheme
+
+.ui-green {
+    color: $ui-green !important;
+}
+
+.ui-blue {
+    color: $ui-blue !important;
+}
+
+.ui-cyan {
+    color: $ui-cyan !important;
+}
+.ui-ygreen {
+    color: $ui-ygreen !important;
+}
+
+.bg-green {
+    background: $ui-green !important;
+}
+
+// Typography
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: $font-stack;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.muted-2 {
+    color: $muted;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+.letter-space-2 {
+    letter-spacing: 2px;
+}
+
+.letter-space-3 {
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none !important;
+    color: $ui-blue !important;
+}
+
+a:hover {
+    color: $ui-light-blue !important;
+    opacity: 1 !important;
+}
+
+.underline {
+    border-bottom: solid 2px $ui-light-blue !important;
+}
+
+.bottom::after {
+    content: ""; 
+    color: $ui-blue;
+    width: 0px;
+    height: 12px;
+    background: $ui-light-blue;
+    display: block;
+    //margin-top: -20px;
+    transition: width 0.5s ease-in-out;
+}
+
+.bottom:hover::after {
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+
+    width:100%;
+}
+
+// Buttons
+
+
+
+
+// Cards
+
+
+// Icons
+
+i {
+    font-size: 1.2em !important;
+    color: #fff !important;
+
+    @media(min-width: 768px ) {
+        font-size: 2em !important;
+    }
+}
+
+i::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 19px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: -5px;
+    //color: #00b09b;
+    //background: #00b09b;
+    box-shadow: 0px 5px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-animate {
+    color: $muted;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-animate:hover {
+    transform: translateY(-15px);
+    //color: #00b09b !important;
+}
+
+.icon-animate:hover::after {
+    transform: translateY(15px);
+    //color: #00b09b !important;
+}
+// Icon animation 
+
+
+
+// Forms
